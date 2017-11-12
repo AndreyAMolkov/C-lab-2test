@@ -1,0 +1,4 @@
+﻿  main.c
+c:\git\c-lab-2test\task1\main.c(19): warning C4244: функция: преобразование "float" в "int", возможна потеря данных
+  task1.vcxproj -> C:\git\C-lab-2test\Debug\task1.exe
+  task1.vcxproj -> C:\git\C-lab-2test\Debug\task1.pdb (Partial PDB)
