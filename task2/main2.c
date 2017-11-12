@@ -1,26 +1,35 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include"task2.c"
+#include"task2.h"
 #include<stdio.h>
 #include<time.h>
 #include<stdlib.h>
 
 int main()
-{
-	int i;
+ {
+	int i=0,score = 1, value = 0, secret = 0, check = 0,result=1;
+	
+	//int checkNumber = 0.00;
 	srand(time(0));
-	for (i = 0;i < 10;i++)
-		printf("%d\n", rand()%100+1);// rand - max=0....32767
+		secret= rand()%100+1;// rand - max=0....32767
+	printf("the programm made a secret number. \nAttempt: %i \nInput the number 1-100 for answer :",score);
+	scanf("\n%i", &value);
+	result = turn(value, secret);
+		while (result!= 0)
+		{
+			score++;
+			if (turn(value, secret) > 0)
+				printf("\nAttempt: %i \nTrips: You input the number biger then the secret. \nRepit enter :", score);
+			else
+				printf("\nAttempt: %i \nTrips: You input the number less then the secret. \nRepit enter :", score);
+			scanf("%i", &value);
+			result = turn(value, secret);
+		}
+		printf("\ncongratulation. You Win\n");
 	return 0;
-
-
-
 }
 
 
-	/*int score = 0, value = 0, secret = 0, check = 0;
-	float checkNumber=0.00;
-	printf("the programm made a secret number. Input the number for answer :");
-	scanf("%i", &value);
+	/*
 	checkNumber=value;
 	while ( value != checkNumber)
 	{

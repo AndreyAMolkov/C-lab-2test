@@ -1,4 +1,4 @@
 ﻿  main2.c
-c:\git\c-lab-2test\task2\main2.c(10): warning C4244: функция: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\git\c-lab-2test\task2\main2.c(12): warning C4244: функция: преобразование "time_t" в "unsigned int", возможна потеря данных
   task2.vcxproj -> C:\git\C-lab-2test\Debug\task2.exe
   task2.vcxproj -> C:\git\C-lab-2test\Debug\task2.pdb (Partial PDB)
