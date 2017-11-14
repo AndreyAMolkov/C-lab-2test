@@ -117,7 +117,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main3.c" />
-    <ClCompile Include="task.c" />
+    <ClCompile Include="task3.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

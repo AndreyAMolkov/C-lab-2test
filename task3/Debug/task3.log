@@ -1,5 +1,5 @@
-﻿  task.c
-  main3.c
-  Создание кода...
-MSVCRTD.lib(exe_main.obj) : error LNK2019: ссылка на неразрешенный внешний символ _main в функции "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
-C:\git\C-lab-2test\Debug\task3.exe : fatal error LNK1120: неразрешенных внешних элементов: 1
+﻿  task3.c
+c:\git\c-lab-2test\task3\task3.c(16): error C2109: для индекса требуется массив или указатель
+c:\git\c-lab-2test\task3\task3.c(18): warning C4013: sprintf: нет определения; предполагается "extern" с возвратом типа "int"
+c:\git\c-lab-2test\task3\task3.c(21): warning C4047: return: "char *" отличается по уровням косвенного обращения от "char"
+c:\git\c-lab-2test\task3\task3.c(4): warning C4047: инициализация: "char" отличается по уровням косвенного обращения от "char [2]"
