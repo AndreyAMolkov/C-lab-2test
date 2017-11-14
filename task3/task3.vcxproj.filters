@@ -20,10 +20,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="task.c">
+    <ClCompile Include="main3.c">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
-    <ClCompile Include="main3.c">
+    <ClCompile Include="task3.c">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
   </ItemGroup>
