@@ -1,4 +1,4 @@
-﻿  task4.c
-  main4.c
-  Создание кода...
-LINK : fatal error LNK1561: точка входа должна быть определена
+﻿  main4.c
+c:\git\c-lab-2test\task4\main4.c(11): warning C4244: функция: преобразование "time_t" в "unsigned int", возможна потеря данных
+  task4.vcxproj -> C:\git\C-lab-2test\Debug\task4.exe
+  task4.vcxproj -> C:\git\C-lab-2test\Debug\task4.pdb (Partial PDB)
