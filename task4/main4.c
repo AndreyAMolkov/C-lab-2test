@@ -1,5 +1,5 @@
 #define _CRT_N0
-#define SIZE 20
+#define SIZE 50
 #include<stdlib.h>
 #include<stdio.h>
 #include<time.h>
@@ -30,34 +30,37 @@ int main()
 	printf("random string :\n");
 	puts(buf);
 
-	endRight= (SIZE-2  );
-	lenStr = strlen(buf);
-	//lenStr= lenStr +((SIZE)/5);
-beginLeft = 0;
+	endRight= strlen(buf);
+beginLeft = -1;
 	do {
 		
 		do
 		{
-			if (lenStr <(beginLeft + countRight))
-				break;
-						left = buf[beginLeft++];
+			beginLeft++;
+			if (beginLeft == endRight)
+								break;
+						left = buf[beginLeft];
 		} while ('A' < left && left < 'Z');
 		
 		do {
-				
-			if ((lenStr) <(beginLeft + countRight))
+			endRight--;
+			if (beginLeft > endRight)
 				break;
 
-				++countRight;
-				right = buf[(endRight--)];
+			right = buf[(endRight)];
 			} while ('0' < right && right < '9' );
-			if (lenStr <(beginLeft + countRight))
+			if (beginLeft < endRight)
+			{
+				buf[beginLeft]=right ;
+				buf[(endRight)] =left;
+				//++endRight;
+				//--beginLeft;
+			}
+			else
 				break;
-			buf[--beginLeft]=right ;
-			buf[(++endRight)] =left;
-			--countRight;
-
-	} while (lenStr >= (beginLeft + countRight));
+			
+			
+	} while (beginLeft < endRight);
 
 	//count=strlen(buf); check 
 
