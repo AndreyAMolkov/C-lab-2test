@@ -2,7 +2,7 @@
 #define _CRT_N0_WINDOWS
 #include<stdio.h>
 #include<stdlib.h>
-#define SIZE 20
+#define SIZE 50
 
 char * layout(char buf[], int line)
 {
@@ -11,10 +11,6 @@ char * layout(char buf[], int line)
 	{
 		buf[i] = '*';
 	}
-
-
-
-
 	return buf;
 }
 

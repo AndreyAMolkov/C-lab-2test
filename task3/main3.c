@@ -1,8 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<stdlib.h>
-#include "task3.h"
-#define SIZE 100
+#include"task3.h"
+#define SIZE 200
 int main()
 {
 	
@@ -27,16 +27,6 @@ int main()
 			printf("%s", result);
 			printf("\n");
 		}
-
-		
-	
-
-	
-	
-	
-	
-	
-
 
 	return 0;
 }
