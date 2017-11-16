@@ -1,4 +1,4 @@
-#define _CRT_N0
+
 #define SIZE 50
 #include<stdlib.h>
 #include<stdio.h>
@@ -59,15 +59,11 @@ beginLeft = -1;
 			else
 				break;
 			
-			
 	} while (beginLeft < endRight);
-
-	//count=strlen(buf); check 
 
 	printf("\n\nChenge string :\n%s\n",buf);
 	
-	
-		//puts(buf[i]);     why Error?
+	//	puts(buf);//     why Error?
 	
 	return 0;
 }

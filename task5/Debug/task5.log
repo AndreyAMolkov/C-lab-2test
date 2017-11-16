@@ -1,4 +1,6 @@
 ﻿  task5.c
-  main5.c
-  Создание кода...
-LINK : fatal error LNK1561: точка входа должна быть определена
+c:\git\c-lab-2test\task5\task5.c(13): warning C4244: функция: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\git\c-lab-2test\task5\task5.c(11): warning C4101: i1: неиспользованная локальная переменная
+c:\git\c-lab-2test\task5\task5.c(32): warning C4172: возвращение адреса локальной или временной переменной : buf
+  task5.vcxproj -> C:\git\C-lab-2test\Debug\task5.exe
+  task5.vcxproj -> C:\git\C-lab-2test\Debug\task5.pdb (Partial PDB)

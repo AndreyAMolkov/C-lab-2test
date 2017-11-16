@@ -1,15 +1,33 @@
-/*Задача №5
 
-   Написать программу, которая выводит на экран 10 паролей, сгенерированных
-   случайным образом из латинских букв и цифр, причём буквы должны быть
-   как в нижнем, так и в верхнем регистрах. Длина пароля - 8 символов.
-Пояснение
+#define BUF 8
+#include<stdlib.h>
+#include<stdio.h>
+#include<time.h>
 
-Пример сгенерированного пароля:Nh1ku83k
 
-Состав
+char * password(char line)
+{
+	int i;
+	char i1;
+	char buf[BUF] = {' '};
+	srand(time(0));
+	for (i = 0;i < line;i++)
+	{
+		switch (rand() % 3)
+		{
+		case 0:
+			buf[i] = rand() % ('z' - 'a' + 1) + 'a';
+			break;
+		case 1:
+			buf[i]= rand() % ('Z' - 'A' + 1) + 'A';
+			break;
+		case 2:
+			buf[i] = rand() % ('0' - '9' + 1) + '1';
+			break;
+		}
 
-Программа должна состоять из двух функций:
+	}
+		//buf[(line )] = '\0';
 
-char * password(char * line) - генерация пароля в line.
-main() - организация диалога.*/
+	return buf;
+}
