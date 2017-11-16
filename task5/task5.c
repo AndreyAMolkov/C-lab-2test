@@ -1,4 +1,4 @@
-
+#define _CRT_SECURE_NO_WARNINGS
 #define BUF 8
 #include<stdlib.h>
 #include<stdio.h>
@@ -7,9 +7,12 @@
 
 char * password(char line)
 {
+	clock_t now;
 	int i;
-	char i1;
-	char buf[BUF] = {' '};
+	char buf[BUF+1] = {" "};
+	char *result;
+	now = clock();
+	while (clock() < (now + CLOCKS_PER_SEC))
 	srand(time(0));
 	for (i = 0;i < line;i++)
 	{
@@ -27,7 +30,9 @@ char * password(char line)
 		}
 
 	}
-		//buf[(line )] = '\0';
-
-	return buf;
+	
+	buf[(line)] = '\0';
+result = malloc(sizeof(char) * 8);
+		sprintf(result, "%s", buf);
+	return result;
 }
