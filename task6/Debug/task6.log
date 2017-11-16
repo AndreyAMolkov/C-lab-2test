@@ -1,4 +1,7 @@
-﻿  task6.c
-  main6.c
-  Создание кода...
-LINK : fatal error LNK1561: точка входа должна быть определена
+﻿  main6.c
+c:\git\c-lab-2\task6\main6.c(20): warning C4047: =: "char *" отличается по уровням косвенного обращения от "int"
+c:\git\c-lab-2\task6\main6.c(37): warning C4013: clear: нет определения; предполагается "extern" с возвратом типа "int"
+c:\git\c-lab-2\task6\main6.c(12): warning C4047: инициализация: "char *" отличается по уровням косвенного обращения от "int"
+c:\git\c-lab-2\task6\main6.c(37): warning C4477: "printf": в строке форматирования "%s" требуется аргумент типа "char *", но вариативный аргумент "1" имеет тип "int"
+  task6.vcxproj -> C:\git\C-lab-2\Debug\task6.exe
+  task6.vcxproj -> C:\git\C-lab-2\Debug\task6.pdb (Partial PDB)
